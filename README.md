@@ -21,16 +21,16 @@ Run as Java Web Start application. Prints directly without displaying dialog box
 
 # .jnlp configuration
 
-Su archivo jnlp debe contener lo siguiente:
+Your jnlp file should contain the following:
 
-* Tener todos los permisos de ejecución
+* Have all execute permissions
 
 ```[xml]
 <all-permissions/>
 </security>
 ```
-* En la directiva "application-desc" agregar los 4 argumentos necesarios para la ejecucion del .jar.
-	En este ejemplo agregamos los parametros con valores dinamicos desde PHP.
+* In the "application-desc" directive add the 4 arguments necessary for the execution of the .jar.
+	In this example we add the parameters with dynamic values from PHP.
 
 ```[xml]
 <application-desc main-class="DirectPrintingService">
@@ -41,7 +41,7 @@ Su archivo jnlp debe contener lo siguiente:
 </application-desc>
 ```
 
-para mayor informacion sobre los archivos jnlp y la tecnologia Java Web Start visite 
-[Este Link](https://docs.oracle.com/javase/tutorial/deployment/webstart/index.html)
+For more information on jnlp files and Java Web Start technology visit
+[This Link](https://docs.oracle.com/javase/tutorial/deployment/webstart/index.html)
 
 
